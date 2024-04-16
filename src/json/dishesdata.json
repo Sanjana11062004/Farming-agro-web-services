@@ -1,0 +1,69 @@
+[
+    {
+      "id": 1,
+      "name": "Ghee Pongal",
+      "price":"115",
+      "description" : "Serves 1 | A savory dish made of cooked rice and green gram blended with clarified butter,mildly tempered with spices, garnished with cashews and servedhot",
+      "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/607fd62e8b8d8ded9fec9d8a63fa0805"
+    },
+    {
+      "id": 2,
+      "name": "Onion Dosai",
+      "price":"140",
+      "description" : "Serves 1 | An appetizing dosa made out of rice and lentil batter with a sprinkling of finely chopped onions,coriander, and chilies served with sambar and chutneys",
+      "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3cea83ae828d7625e7f79bc5fca8cb9d"
+      
+    },
+    {
+        "id": 3,
+        "name": "Poori Masala",
+        "price":"115",
+        "description" : "Serves 1 | A delicious Indian breakfast dish comprising of 2 big circular fluffy deep fried wheat flour Pooris served with a mildly spiced vegetable korma and coconut chutney",
+        "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3cea83ae828d7625e7f79bc5fca8cb9d"
+    },
+    {
+      "id": 4,
+      "name": "Ghee Pongal",
+      "price":"115",
+      "description" : "Serves 1 | A savory dish made of cooked rice and green gram blended with clarified butter,mildly tempered with spices, garnished with cashews and servedhot",
+      "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/607fd62e8b8d8ded9fec9d8a63fa0805"
+    },
+    {
+      "id": 5,
+      "name": "Onion Dosai",
+      "price":"140",
+      "description" : "Serves 1 | An appetizing dosa made out of rice and lentil batter with a sprinkling of finely chopped onions,coriander, and chilies served with sambar and chutneys",
+      "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3cea83ae828d7625e7f79bc5fca8cb9d"
+      
+    },
+    {
+        "id": 6,
+        "name": "Poori Masala",
+        "price":"115",
+        "description" : "Serves 1 | A delicious Indian breakfast dish comprising of 2 big circular fluffy deep fried wheat flour Pooris served with a mildly spiced vegetable korma and coconut chutney",
+        "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3cea83ae828d7625e7f79bc5fca8cb9d"
+    },
+    {
+      "id": 7,
+      "name": "Ghee Pongal",
+      "price":"115",
+      "description" : "Serves 1 | A savory dish made of cooked rice and green gram blended with clarified butter,mildly tempered with spices, garnished with cashews and servedhot",
+      "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/607fd62e8b8d8ded9fec9d8a63fa0805"
+    },
+    {
+      "id": 8,
+      "name": "Onion Dosai",
+      "price":"140",
+      "description" : "Serves 1 | An appetizing dosa made out of rice and lentil batter with a sprinkling of finely chopped onions,coriander, and chilies served with sambar and chutneys",
+      "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3cea83ae828d7625e7f79bc5fca8cb9d"
+      
+    },
+    {
+        "id": 9,
+        "name": "Poori Masala",
+        "price":"115",
+        "description" : "Serves 1 | A delicious Indian breakfast dish comprising of 2 big circular fluffy deep fried wheat flour Pooris served with a mildly spiced vegetable korma and coconut chutney",
+        "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3cea83ae828d7625e7f79bc5fca8cb9d"
+    }
+  ]
+  
