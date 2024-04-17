@@ -90,9 +90,9 @@ function Home() {
         <Card2></Card2>
 
         <div className="app-div content-gap">
-          {/* <Link to="/dish"> */}
+         <Link to="/dish">
             <Items
-              // onClick={nextPage}
+              onClick={nextPage}
               image={dhal}
               // imgoffer="ITEM AT 129"
               resname="Mung Bean"
@@ -101,7 +101,7 @@ function Home() {
               variety="Pulses"
               area="Saravapatti"
             ></Items>
-          {/* </Link> */}
+         </Link>
          {/* <Link to="/dish"> */}
          <Items
               // onClick={nextPage}

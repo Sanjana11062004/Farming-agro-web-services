@@ -48,13 +48,13 @@ function Dish() {
             <a> Coimbatore / </a>
           </span>
           <span>
-            <p> Wok Asian Food</p>
+            <p> Wok Asian </p>
           </span>
         </div>
         <div className="flexx">
           <div className="col">
-            <p className="res-name">Ruchi Restaurant</p>
-            <p className="margin-zero">South Indian Chinese</p>
+            <p className="res-name">Ruchi Culture</p>
+            <p className="margin-zero">South Indian </p>
             <p className="margin-zero">Pollachi 1.2 km</p>
           </div>
           <div className="rating-main">
