@@ -31,6 +31,7 @@ import { Link } from "react-router-dom";
 import Dish from "./Dish";
 import FooterMob from "./FooterMob";
 import HeaderMob from "./HeaderMob";
+import dhal from "../assets/images/dhal.png"
 
 function Home() {
   const [offers, setOffers] = useState([offer1, offer2]);
@@ -79,170 +80,253 @@ function Home() {
       <HeaderMob></HeaderMob>
       <div className="main">
         <p className="heading margin-next-head">Best offers for you</p>
-        <div className=" app-div offers-app">
+        {/* <div className=" app-div offers-app">
           {offers.map((i, index) => (
             <Offers key={index} offers={i}></Offers>
           ))}
-        </div>
+        </div> */}
 
-        <Card></Card>
+        {/* <Card></Card> */}
         <Card2></Card2>
 
         <div className="app-div content-gap">
-          <Link to="/dish">
+          {/* <Link to="/dish"> */}
             <Items
-              onClick={nextPage}
-              image={dosa}
-              imgoffer="ITEM AT 129"
-              resname="Burger King"
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
               rating="4.3"
-              delivery="60-65 mins"
-              variety="Burgers American"
+              delivery="2 days"
+              variety="Pulses"
               area="Saravapatti"
             ></Items>
-          </Link>
-          <Items
-            image={icecream}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-
-          <Items
-            image={snad}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={itly}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={dosa2}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={ibaco}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={juice}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={mm}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={palam}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={sweet}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={pixxa}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={paneer}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={legpiece}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={brhbiriyani}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={pizzaland}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
-          <Items
-            image={samosabw}
-            imgoffer="ITEM AT 129"
-            resname="Burger King"
-            rating="4.3"
-            delivery="60-65 mins"
-            variety="Burgers American"
-            area="Saravapatti"
-          ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         {/* <Link to="/dish"> */}
+         <Items
+              // onClick={nextPage}
+              image={dhal}
+              // imgoffer="ITEM AT 129"
+              resname="Mung Bean"
+              rating="4.3"
+              delivery="2 days"
+              variety="Pulses"
+              area="Saravapatti"
+            ></Items>
+          {/* </Link> */}
+         
+          
+          
         </div>
       </div>
       <div className="main2">
         <Hr></Hr>
       </div>
-      <div className="main2-content">
+      {/* <div className="main2-content">
         <p className="heading-main2 margin-next-head-main2">
           Best Places to Eat Across Cities
         </p>
@@ -251,22 +335,22 @@ function Home() {
             <Content key={index} main={"Best Restaurant in"} title={i}></Content>
           ))}
         </div>
-      </div>
-      <div className="main2-content">
+      </div> */}
+      {/* <div className="main2-content">
         <p className="heading-main2 margin-next-head-main2">
           Best Cuisines Near Me
         </p>
         <div className="cont-flex">{cuisine.map((i,index)=>(
           <Content key={index} main={i} title={"Restaurant Near Me"}></Content>
         ))}</div>
-      </div>
+      </div> */}
       <div className="main2-content">
         <p className="heading-main2 margin-next-head-main2">
-          Explore Every Restaurants Near Me
+          Explore Every Products Near Me
         </p>
         <div className="cont-flex">
-          <ContentBig name={"Explore Restaurants Near Me"}></ContentBig>
-          <ContentBig name={"Explore Top Rated Restaurants Near Me"}></ContentBig>
+          <ContentBig name={"Explore Products Near Me"}></ContentBig>
+          <ContentBig name={"Explore Top Rated Products Near Me"}></ContentBig>
         </div>
       </div>
       <div className="gapbtw"></div>

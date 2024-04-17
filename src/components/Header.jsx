@@ -8,6 +8,7 @@ import user from "../assets/images/user.png";
 import cart from "../assets/images/cart.png";
 import { Link } from "react-router-dom";
 import Cart from "./Cart";
+import sprout from "../assets/images/sprout.png"
 
 function Header({ cartCount }) {
   return (
@@ -16,7 +17,7 @@ function Header({ cartCount }) {
       <nav className="nav-bar ">
         <ul className="nav-items-left">
           <a className="nav-items-left-a" href="">
-            <img className="logo" src={logo} width={50} height={70}></img>
+            <img className="logo" src={sprout} width={50} height={70}></img>
           </a>
           <li className="nav-items">
             <a className="nav-items-left-a" href="">

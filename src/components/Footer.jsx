@@ -1,14 +1,15 @@
 import React from "react";
 import playstore from "../assets/images/playstore.png";
 import appstore from "../assets/images/appstore.png";
-import logo from "../assets/images/logo.png";
+import sprout from "../assets/images/sprout.png";
+
 function Footer() {
   return (
     <div className="footer-main">
       <div className="footer-top">
         <div style={{ width: "38%" }}>
           <p className="footer-text">
-            For better experience,download the Swiggy app now
+            For better experience,download the Farma app now
           </p>
         </div>
         <div>
@@ -23,10 +24,10 @@ function Footer() {
           <div className="grid-item">
             <div className="grid-part1">
               <div>
-                <img src={logo} width={40} height={40}></img>
+                <img src={sprout} width={40} height={40}></img>
               </div>
               <div className="grid-font">
-                <p>Swiggy</p>
+                <p>Farma</p>
               </div>
             </div>
             <div>
@@ -48,9 +49,9 @@ function Footer() {
             <p className="font-grid-content">About</p>
             <p className="font-grid-content">Careers</p>
             <p className="font-grid-content">Team</p>
-            <p className="font-grid-content">Swiggy One</p>
-            <p className="font-grid-content">Swiggy Instamart</p>
-            <p className="font-grid-content">Swiggy Genie</p>
+            <p className="font-grid-content">Farma One</p>
+            <p className="font-grid-content">Farma Instamart</p>
+            <p className="font-grid-content">Farma Genie</p>
           </div>
           <div>
             <div className="grid-item">
@@ -66,7 +67,7 @@ function Footer() {
               <p className="font-grid-content">Privacy Policy</p>
             </div>
           </div>
-          <div className="grid-item">
+          {/* <div className="grid-item">
             <p className="foot-grid-head">We deliver to:</p>
             <p className="font-grid-content">Banglore</p>
             <p className="font-grid-content">Gurgaon</p>
@@ -74,7 +75,7 @@ function Footer() {
             <p className="font-grid-content">Delhi</p>
             <p className="font-grid-content">Mumbai</p>
             <p className="font-grid-content">Pune</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
