@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import dosa from "../assets/images/dosa.png";
 import { Link } from "react-router-dom";
 import discount from "../assets/images/discount.png";
+import pulses from "../assets/images/pulses.jpeg"
 
 function Cart({ name, price }) {
   const [dishes, setDishes] = useState([]);
@@ -71,7 +72,7 @@ function Cart({ name, price }) {
           <div className="">
             <img
               className="dishes-image"
-              src={dosa}
+              src={pulses}
               alt="dish-image"
               width={52}
               height={56}
@@ -79,7 +80,7 @@ function Cart({ name, price }) {
           </div>
           <div className="col">
             <div className="dishes-items">
-              <p>Restaurant name</p>
+              <p>Name</p>
             </div>
             <div className="dishes-items-price">
               <p>Place</p>

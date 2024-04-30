@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import dishesdata from "../json/dishesdata.json";
 import veg from "../assets/images/veg.png";
+import pulses from "../assets/images/pulses.jpeg"
 
 function Dishes({ addToCart }) {
   const [dis, setDis] = useState([]);
@@ -33,7 +34,7 @@ function Dishes({ addToCart }) {
             <div className="image-food-add">
               <img
                 className="dishes-image"
-                src={dis.imageUrl}
+                src={pulses}
                 alt="dish-image"
                 width={120}
                 height={100}
