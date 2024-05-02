@@ -11,6 +11,20 @@ const LoginForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setErrorMessage("Invalid email format");
+      return;
+    }
+
+    // Basic password validation
+    if (password.length < 6) {
+      setErrorMessage("Password must be at least 6 characters long");
+      return;
+    }
+
     // Here you can implement your login logic, like sending a request to your backend
     if (email === "example@example.com" && password === "password") {
       // Successful login
