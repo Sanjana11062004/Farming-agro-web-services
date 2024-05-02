@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LoginForm from './LoginForm';
+import { Link } from 'react-router-dom';
 
 
 const Checkbox = ({ label, checked, onChange }) => {
@@ -24,36 +25,35 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="registration-form">
-      <h2>Register</h2>
-      <div className="input-field">
-        <label>Email:</label>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+    <div className="login-container"> {/* Reuse login-container class */}
+      <div className="login-form"> {/* Reuse login-form class */}
+        <h2>Register</h2>
+        <div className="input-field">
+          <label>Email:</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="input-field">
+          <label>Password:</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <Checkbox
+          label="Are you a farmer?"
+          checked={isFarmer}
+          onChange={(e) => setIsFarmer(e.target.checked)}
         />
+        <Link to="/login"><button className="button">Register</button></Link> {/* Reuse button class */}
+        <Link to="/login"><p className="register-link">Login</p></Link> {/* Reuse register-link class */}
       </div>
-      <div className="input-field">
-        <label>Password:</label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      <Checkbox
-        label="Are you a farmer?"
-        checked={isFarmer}
-        onChange={(e) => setIsFarmer(e.target.checked)}
-      />
-      <button onClick={handleRegister}>Register</button>
-      <LoginForm></LoginForm>
     </div>
-    
   );
 };
-
-
 
 export default RegistrationForm;

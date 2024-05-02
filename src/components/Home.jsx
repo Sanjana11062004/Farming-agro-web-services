@@ -78,7 +78,7 @@ function Home() {
     <div>
       <Header></Header>
       <HeaderMob></HeaderMob>
-      <div className="main">
+      <div className="main" style={{marginTop:"150%"}}>
         <p className="heading margin-next-head">Best offers for you</p>
         {/* <div className=" app-div offers-app">
           {offers.map((i, index) => (

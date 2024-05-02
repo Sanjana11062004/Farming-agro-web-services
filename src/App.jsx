@@ -6,13 +6,15 @@ import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import RegistrationForm from "./components/RegistrationForm";
 import LoginForm from "./components/LoginForm";
+import SellProducts from "./components/SellProducts";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route exact path="/" element={<RegistrationForm/>} />
-        <Route exact path="login" element={<LoginForm/>} />
+        <Route exact path="/login" element={<LoginForm/>} />
+        <Route exact path="/sell" element={<SellProducts/>} />
         <Route exact path="/home" element={<Home/>} />
         <Route exact path="/dish" element={<Dish/>} />
         <Route exact path="/checkout" element={<Checkout/>} />
