@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 const SellProducts = () => {
   const [productName, setProductName] = useState('');
   const [productImage, setProductImage] = useState('');
@@ -9,11 +8,13 @@ const SellProducts = () => {
   const [areaOfDelivery, setAreaOfDelivery] = useState('');
   const [price, setPrice] = useState('');
   const [discount, setDiscount] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can implement logic to submit the form data
-    console.log({
+
+    const productData = {
       productName,
       productImage,
       sellerName,
@@ -21,6 +22,32 @@ const SellProducts = () => {
       areaOfDelivery,
       price,
       discount,
+    };
+
+    fetch('http://localhost:5002/addProduct', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(productData),
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to add product');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Product added successfully:', data);
+      setSuccessMessage('Product added successfully');
+      setTimeout(() => {
+        setSuccessMessage('');
+        window.location.reload(); // Refresh the page
+      }, 2000); // Display success message for 2 seconds
+    })
+    .catch(error => {
+      console.error('Error adding product:', error);
+      setErrorMessage('Failed to add product');
     });
   };
 
@@ -43,7 +70,6 @@ const SellProducts = () => {
             type="text"
             value={productImage}
             onChange={(e) => setProductImage(e.target.value)}
-            
           />
         </div>
         <div className="input-field">
@@ -91,6 +117,8 @@ const SellProducts = () => {
           />
         </div>
         <button type="submit">Add Product</button>
+        {errorMessage && <div className="error-message">{errorMessage}</div>}
+        {successMessage && <div className="success-message">{successMessage}</div>}
       </form>
     </div>
   );

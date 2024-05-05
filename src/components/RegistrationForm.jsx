@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import LoginForm from './LoginForm';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Checkbox = ({ label, checked, onChange }) => {
   return (
@@ -14,8 +13,8 @@ const Checkbox = ({ label, checked, onChange }) => {
 };
 
 const RegistrationForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [isFarmer, setIsFarmer] = useState(false);
   const [errors, setErrors] = useState({});
 
@@ -24,16 +23,16 @@ const RegistrationForm = () => {
 
     // Validate email
     if (!email.trim()) {
-      errors.email = 'Email is required';
+      errors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errors.email = 'Email is invalid';
+      errors.email = "Email is invalid";
     }
 
     // Validate password
     if (!password.trim()) {
-      errors.password = 'Password is required';
+      errors.password = "Password is required";
     } else if (password.length < 6) {
-      errors.password = 'Password must be at least 6 characters long';
+      errors.password = "Password must be at least 6 characters long";
     }
 
     setErrors(errors);
@@ -43,14 +42,41 @@ const RegistrationForm = () => {
 
   const handleRegister = () => {
     if (validateForm()) {
-      // Implement registration logic here
-      console.log('Registration Details:', { email, password, isFarmer });
+      fetch("http://localhost:5002/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password, isFarmer }),
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          if (data && data.message) {
+            console.log("Registration successful:", data.message);
+            // Handle success message here, if needed
+          } else {
+            throw new Error("Unexpected server response");
+          }
+        })
+        .catch((error) => {
+          console.error("Error registering user:", error);
+          // Handle error here, if needed
+        });
     }
   };
 
   return (
-    <div className="login-container"> {/* Reuse login-container class */}
-      <div className="login-form"> {/* Reuse login-form class */}
+    <div className="login-container">
+      {" "}
+      {/* Reuse login-container class */}
+      <div className="login-form">
+        {" "}
+        {/* Reuse login-form class */}
         <h2>Register</h2>
         <div className="input-field">
           <label>Email:</label>
@@ -75,8 +101,14 @@ const RegistrationForm = () => {
           checked={isFarmer}
           onChange={(e) => setIsFarmer(e.target.checked)}
         />
-        <button className="button" onClick={handleRegister}>Register</button> {/* Reuse button class */}
-        <Link to="/login"><p className="register-link">Login</p></Link> {/* Reuse register-link class */}
+        <button className="button" onClick={handleRegister}>
+          Register
+        </button>{" "}
+        {/* Reuse button class */}
+        <Link to="/login">
+          <p className="register-link">Login</p>
+        </Link>{" "}
+        {/* Reuse register-link class */}
       </div>
     </div>
   );
